@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/main_color">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp">
+   <TextView
+       android:textColor="@color/text_color"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Car_Image:"
+       android:id="@+id/img_label"/>
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/img_label"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:id="@+id/car_img"/>
+    <TextView
+        android:textColor="@color/text_color"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/car_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/name_label"/>
+
+ <TextView
+     android:id="@+id/name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignTop="@id/name_label"
+     android:layout_alignBottom="@id/name_label"
+     android:layout_marginLeft="8dp"
+     android:layout_toRightOf="@id/name_label"
+     android:text="Your Name Appears here"
+     android:textColor="#0F0F0F" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regno_label"
+        android:textColor="@color/text_color"
+        android:text="Reg_no:"/>
+    <TextView
+        android:textColor="#0F0F0F"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/reg_no"
+        android:layout_alignBottom="@id/regno_label"
+        android:layout_alignTop="@id/regno_label"
+        android:layout_toRightOf="@id/regno_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Registration Number"/>
+    <TextView
+        android:textColor="@color/text_color"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/regno_label"
+        android:text="Contact_no:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactno_label"/>
+    <TextView
+        android:layout_toRightOf="@id/contactno_label"
+        android:text="Your Contact No:"
+        android:textColor="#0F0F0F"
+        android:layout_alignTop="@id/contactno_label"
+        android:layout_alignBottom="@id/contactno_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_no"/>
+
+    <TextView
+        android:textColor="@color/text_color"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/contactno_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details_label"
+        android:text="Details:"/>
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:textColor="#0F0F0F"
+        android:layout_below="@id/details_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Details Appears here"
+        android:id="@+id/details"/>
+</RelativeLayout>
+</ScrollView>
